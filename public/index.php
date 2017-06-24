@@ -1,0 +1,9 @@
+<?php
+
+echo 'composer framework';
+echo "<br>\n";
+// Autoload 自动载入
+require '../vendor/autoload.php';
+
+// 路由配置
+require '../config/routes.php';
