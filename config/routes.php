@@ -2,7 +2,9 @@
 
 use NoahBuscher\Macaw\Macaw;
 
-Macaw::get('', 'HomeController@home');
+Macaw::get('', 'app\controllers\BaseController@test');
+
+Macaw::get('/home', 'app\controllers\HomeController@home');
 
 Macaw::get('/', function() {
   echo "root";
