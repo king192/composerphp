@@ -6,22 +6,25 @@ class Article
 {
   public static function first()
   {
-    $connection = mysql_connect("localhost","root","password");
+    $connection = mysqli_connect("localhost","root","root");
     if (!$connection) {
-      die('Could not connect: ' . mysql_error());
+      die('Could not connect: ' . mysqli_error($connection));
     }
 
-    mysql_set_charset("UTF8", $connection);
+    mysqli_set_charset($connection, "UTF8");
 
-    mysql_select_db("mffc", $connection);
+    mysqli_select_db($connection, "mffc");
 
-    $result = mysql_query("SELECT * FROM articles limit 0,1");
+    $result = mysqli_query($connection,"SELECT * FROM articles");
 
-    if ($row = mysql_fetch_array($result)) {
-      echo '<h1>'.$row["title"].'</h1>';
-      echo '<p>'.$row["content"].'</p>';
+    $res = '';
+    if ($row = mysqli_fetch_assoc($result)) {
+      // echo '<h1>'.$row["title"].'</h1>';
+      // echo '<p>'.$row["content"].'</p>';
+      $res = $row;
     }
 
-    mysql_close($connection);
+    mysqli_close($connection);
+    return $res;
   }
 }

@@ -6,6 +6,8 @@ Macaw::get('', 'app\controllers\BaseController@test');
 
 Macaw::get('/home', 'app\controllers\HomeController@home');
 
+Macaw::get('/model', 'app\controllers\HomeController@model');
+
 Macaw::get('/', function() {
   echo "root";
 });
