@@ -7,6 +7,7 @@ namespace app\controllers;
 class BaseController
 {
     protected $view;
+    protected $mail;
   
   public function __construct()
   {
@@ -24,6 +25,16 @@ class BaseController
       extract($view->data);
 
       require $view->view;
+
+    }
+
+    $mail = $this->mail;
+
+    if ( $mail instanceof Mail ) {
+
+    $mailer = new Nette\Mail\SmtpMailer($mail->config);
+
+    $mailer->send($mail);
 
     }
 

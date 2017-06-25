@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use Article;
+use Mail;
 /**
 * \HomeController
 */
@@ -25,5 +26,15 @@ class HomeController extends BaseController
                                     ->withTitle('MFFC :-D')
 
                                     ->withFuckMe('OK!');
+  }
+
+  public function mail() {
+        $this->mail = Mail::to(['1434970057@qq.com', 'u@iyouths.org'])
+
+                    ->from('forevervas <i@iyouths.org>')
+
+                    ->title('Fuck!')
+
+                    ->content('<h1>Hello~~</h1>');
   }
 }
