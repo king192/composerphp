@@ -37,4 +37,12 @@ class HomeController extends BaseController
 
                     ->content('<h1>Hello~~</h1>');
   }
+
+  public function setRedis() {
+    Redis::set('key','value',5,'s');
+  }
+
+  public function getRedis() {
+    echo Redis::get('key');
+  }
 }
