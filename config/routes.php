@@ -12,6 +12,10 @@ Macaw::get('/view', 'app\controllers\HomeController@view');
 
 Macaw::get('/mail', 'app\controllers\HomeController@mail');
 
+Macaw::get('/cacheSet', 'app\controllers\HomeController@setRedis');
+
+Macaw::get('/cacheGet', 'app\controllers\HomeController@getRedis');
+
 Macaw::get('/', function() {
   echo "root";
 });

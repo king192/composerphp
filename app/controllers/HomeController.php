@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use Article;
 use Mail;
+use Redis;
 /**
 * \HomeController
 */
@@ -43,6 +44,7 @@ class HomeController extends BaseController
   }
 
   public function getRedis() {
+    echo '<br>';
     echo Redis::get('key');
   }
 }
