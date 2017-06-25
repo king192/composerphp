@@ -156,6 +156,7 @@ class ComposerStaticInit497f08451c910e8a9d6c3ee5ef171a0d
         'Nette\\Utils\\Strings' => __DIR__ . '/..' . '/nette/utils/src/Utils/Strings.php',
         'Nette\\Utils\\UnknownImageFileException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
         'Nette\\Utils\\Validators' => __DIR__ . '/..' . '/nette/utils/src/Utils/Validators.php',
+        'Redis' => __DIR__ . '/../..' . '/services/Redis.php',
         'View' => __DIR__ . '/../..' . '/services/View.php',
         'app\\controllers\\BaseController' => __DIR__ . '/../..' . '/app/controllers/BaseController.php',
         'app\\controllers\\HomeController' => __DIR__ . '/../..' . '/app/controllers/HomeController.php',
