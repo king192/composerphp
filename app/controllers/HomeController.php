@@ -31,7 +31,7 @@ class HomeController extends BaseController
   public function mail() {
         $this->mail = Mail::to(['1434970057@qq.com', 'u@iyouths.org'])
 
-                    ->from('forevervas <i@iyouths.org>')
+                    ->from('forevervas <15626519209@163.com>')
 
                     ->title('Fuck!')
 

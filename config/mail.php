@@ -4,9 +4,9 @@ return [
 
   'host' => 'smtp.163.com',
 
-  'username' => 'ooxx@163.com',
+  'username' => '15626519209@163.com',
 
-  'password' => 'password',
+  'password' => 'go2017',
 
   'secure' => ''
 
