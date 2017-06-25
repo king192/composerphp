@@ -6,7 +6,7 @@ return [
 
   'username' => '15626519209@163.com',
 
-  'password' => 'go2017',
+  'password' => '',//网易邮箱授权码
 
   'secure' => ''
 
