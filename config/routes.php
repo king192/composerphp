@@ -8,6 +8,8 @@ Macaw::get('/home', 'app\controllers\HomeController@home');
 
 Macaw::get('/model', 'app\controllers\HomeController@model');
 
+Macaw::get('/view', 'app\controllers\HomeController@view');
+
 Macaw::get('/', function() {
   echo "root";
 });

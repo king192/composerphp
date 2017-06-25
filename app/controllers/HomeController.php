@@ -18,4 +18,12 @@ class HomeController extends BaseController
     $res = Article::first();
     print_r($res);
   }
+
+  public function view() {
+    $this->view = \View::make('home')->with('article',Article::first())
+
+                                    ->withTitle('MFFC :-D')
+
+                                    ->withFuckMe('OK!');
+  }
 }
