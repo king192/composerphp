@@ -30,9 +30,9 @@ class BaseController
 
     $mail = $this->mail;
 
-    if ( $mail instanceof Mail ) {
+    if ( $mail instanceof \Mail ) {
 
-    $mailer = new Nette\Mail\SmtpMailer($mail->config);
+    $mailer = new \Nette\Mail\SmtpMailer($mail->config);
 
     $mailer->send($mail);
 

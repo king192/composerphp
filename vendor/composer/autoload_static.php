@@ -98,6 +98,7 @@ class ComposerStaticInit497f08451c910e8a9d6c3ee5ef171a0d
 
     public static $classMap = array (
         'Article' => __DIR__ . '/../..' . '/app/models/Article.php',
+        'Mail' => __DIR__ . '/../..' . '/services/Mail.php',
         'Nette\\ArgumentOutOfRangeException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
         'Nette\\Bridges\\MailDI\\MailExtension' => __DIR__ . '/..' . '/nette/mail/src/Bridges/MailDI/MailExtension.php',
         'Nette\\DeprecatedException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',

@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Article' => $baseDir . '/app/models/Article.php',
+    'Mail' => $baseDir . '/services/Mail.php',
     'Nette\\ArgumentOutOfRangeException' => $vendorDir . '/nette/utils/src/Utils/exceptions.php',
     'Nette\\Bridges\\MailDI\\MailExtension' => $vendorDir . '/nette/mail/src/Bridges/MailDI/MailExtension.php',
     'Nette\\DeprecatedException' => $vendorDir . '/nette/utils/src/Utils/exceptions.php',
