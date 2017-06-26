@@ -16,6 +16,8 @@ Macaw::get('/cacheSet', 'app\controllers\HomeController@setRedis');
 
 Macaw::get('/cacheGet', 'app\controllers\HomeController@getRedis');
 
+Macaw::get('/testSmarty', 'app\controllers\HomeController@smarty');
+
 Macaw::get('/', function() {
   echo "root";
 });

@@ -5,18 +5,19 @@
  * @package Example-application
  */
 
-class Smarty
+class Smartys
 {
+    protected $smarty;
     public function __construct() {
-        require 'vendor/smarty/smarty/libs/Smarty.class.php';
+        require '../vendor/smarty/smarty/libs/Smarty.class.php';
 
-        $smarty = new Smarty;
+        $this->smarty = new Smarty();
 
-        //$smarty->force_compile = true;
-        $smarty->debugging = true;
-        $smarty->caching = true;
-        $smarty->cache_lifetime = 120;
-        return $smarty;
+        //$this->smarty->force_compile = true;
+        $this->smarty->debugging = true;
+        $this->smarty->caching = true;
+        $this->smarty->cache_lifetime = 120;
+        // $this->smarty = $this->smarty;
 // $smarty->assign("Name", "Fred Irving Johnathan Bradley Peppergill", true);
 // $smarty->assign("FirstName", array("John", "Mary", "James", "Henry"));
 // $smarty->assign("LastName", array("Doe", "Smith", "Johnson", "Case"));
@@ -32,5 +33,9 @@ class Smarty
 
 // $smarty->display('index.tpl');
 
+    }
+
+    public function api() {
+        return $this->smarty;
     }
 }
