@@ -61,6 +61,7 @@ return array(
     'Nette\\Utils\\UnknownImageFileException' => $vendorDir . '/nette/utils/src/Utils/exceptions.php',
     'Nette\\Utils\\Validators' => $vendorDir . '/nette/utils/src/Utils/Validators.php',
     'Redis' => $baseDir . '/services/Redis.php',
+    'Smarty' => $baseDir . '/services/Smarty.php',
     'View' => $baseDir . '/services/View.php',
     'app\\controllers\\BaseController' => $baseDir . '/app/controllers/BaseController.php',
     'app\\controllers\\HomeController' => $baseDir . '/app/controllers/HomeController.php',
