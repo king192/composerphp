@@ -63,6 +63,7 @@ class HomeController extends BaseController
     $smarty->api()->assign("option_output", array("New York", "Nebraska", "Kansas", "Iowa", "Oklahoma", "Texas"));
     $smarty->api()->assign("option_selected", "NE");
 
+    // print_r($smarty->api()->getTemplateDir());
     $smarty->api()->display('index.tpl');
   }
 }
