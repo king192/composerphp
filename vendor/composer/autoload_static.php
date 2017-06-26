@@ -159,6 +159,7 @@ class ComposerStaticInit497f08451c910e8a9d6c3ee5ef171a0d
         'Nette\\Utils\\Validators' => __DIR__ . '/..' . '/nette/utils/src/Utils/Validators.php',
         'Redis' => __DIR__ . '/../..' . '/services/Redis.php',
         'Smartys' => __DIR__ . '/../..' . '/services/Smartys.php',
+        'Smartys1' => __DIR__ . '/../..' . '/services/Smartys1.php',
         'View' => __DIR__ . '/../..' . '/services/View.php',
         'app\\controllers\\BaseController' => __DIR__ . '/../..' . '/app/controllers/BaseController.php',
         'app\\controllers\\HomeController' => __DIR__ . '/../..' . '/app/controllers/HomeController.php',

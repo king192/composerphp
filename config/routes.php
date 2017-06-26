@@ -18,6 +18,8 @@ Macaw::get('/cacheGet', 'app\controllers\HomeController@getRedis');
 
 Macaw::get('/testSmarty', 'app\controllers\HomeController@smarty');
 
+Macaw::get('/testSmarty1', 'app\controllers\HomeController@smarty1');
+
 Macaw::get('/', function() {
   echo "root";
 });
